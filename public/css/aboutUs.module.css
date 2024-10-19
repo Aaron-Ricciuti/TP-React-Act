@@ -1,0 +1,58 @@
+.about-us h2 {
+    font-family: "Bona Nova SC", serif;
+    text-align: center;
+    margin: 28px;
+    font-weight: 700;
+}
+
+.about-us {
+    background-color: #e1d7d7;
+    border-radius: 40px;
+    padding: 30px;
+    margin-top: 5%;
+    box-shadow: inset 0px -1px 20px 5px darkred;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 0%;
+    border-radius: 15px;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.about-container p {
+    margin-inline: 2%;
+    padding: 4%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-container hr {
+    border: none;
+    background: #000000;
+    height: 2px;
+    margin-inline: 14%;
+}
+
+.about-container h3{
+    font-style: italic;
+    color: red;
+}
+
+.about-container img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) { 
+    .about-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .about-container img{
+        width: 80%;
+    }
+}

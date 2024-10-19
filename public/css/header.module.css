@@ -1,0 +1,159 @@
+header{
+    background-color: #3a0d0df7;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+header h1{ 
+    font-family: "Bona Nova SC", serif; 
+    color: rgb(207, 63, 63); 
+    margin-top: 8px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.nav-container {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.agrandado-form {
+    display: flex;
+    align-items: center;
+}
+
+.agrandado-form input{
+    border: 2px solid #000000;
+    margin: 20px;
+    padding: 6px;
+    width: 100px;
+    min-width: 255px;
+    max-width: 400px;
+    height: 40px;
+    background: white;
+}
+
+button{
+    cursor: pointer;
+    height: 27px;
+    width: 68px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+nav ul li{
+    margin: 0 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgb(200, 0, 0);
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+::placeholder{
+    padding: 5%;
+}
+
+.faSolid{
+    width: 50px;
+    position: fixed;
+    right: 19px;
+    bottom: 100px;
+    cursor: pointer;
+    font-size: xxx-large;
+    color: #00000099;
+    z-index: 1000;
+}
+
+.logo-wsp {
+    width: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    cursor: pointer;
+    filter: drop-shadow(1px 3px 6px black);
+    z-index: 100;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) { 
+    
+    header {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .agrandado-form button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding-block: 20px;
+    }
+
+    nav ul li {
+        padding: 2px;
+        margin-bottom: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagen-con-titulo {
+        height: 55vh;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        padding: 22px;
+        padding-top: 7px
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        margin-block: 18px;
+        margin-top: 6px;
+    }
+}

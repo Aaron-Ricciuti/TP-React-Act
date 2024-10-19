@@ -1,0 +1,67 @@
+.imagen-con-titulo {
+    background-size: cover; 
+    background-position: center; 
+    text-align: center;
+    color: white;  
+    width: 100%;
+    height: 100vh;
+}
+
+.services-img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
+    height: 100vh;
+}
+
+.imagen-con-titulo h3 {
+    font-family: "Diplomata", serif;
+    color: #ffffff;
+    font-size: 26px;
+    background: linear-gradient(0deg, rgb(0 0 0 / 57%) 0%, rgb(0 0 0 / 37%) 63%);
+    margin-top: 9%;
+    font-weight: 700;
+}
+
+.btn-img  {
+    text-decoration: none;
+}
+
+.grid {
+    width: 95vw;
+    max-width: 100%;;
+    min-width: 320px;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.grid div {
+    filter: drop-shadow(5px 5px 5px  rgb(0, 0, 0));
+    transition: all 0.5s;
+}
+
+.grid div:hover {
+    scale: 0.8;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) { 
+    
+    .imagen-con-titulo h3 {
+        font-size: 13px;
+    }
+
+    .imagen-con-titulo {
+        width: 100%;
+        height: 45vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+   
+    .imagen-con-titulo h3 {
+        font-size: 20px;
+    }
+}
+
