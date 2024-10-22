@@ -11,6 +11,8 @@ import ContactContainer from './components/ContactContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Routes, Route } from 'react-router-dom';
 import Cajonde12Container from './components/Cajonde12Container';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App()  {
   const navLinks = [

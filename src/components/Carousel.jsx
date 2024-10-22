@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import CarouselItem from "./CarouseIItem";
-import styles from "../../public/css/cajonde12.module.css"
-
+import styles from "../../public/css/cajonde12.module.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 function Carousel({ slides }) {
   return (
       <main>

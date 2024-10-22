@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import Carousel from './carousel';
 import styles from "../../public/css/cajonde12.module.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function Cajonde12({ title, price, description, additionalInfo, socialLinks }) {

@@ -5,6 +5,7 @@ import Cajonde12 from './Cajonde12';
 
 function Cajonde12Container( {products} ) {
     console.log('products:', products);
+    
   return (
     <section className={styles['product-container']}>
             {products.map((product, index) => (
@@ -12,7 +13,7 @@ function Cajonde12Container( {products} ) {
                     key={index}
                     title={product.title}
                     price={product.price}
-                    description={product.description}
+                    description={product.description }
                     additionalInfo={product.additionalInfo}
                     socialLinks={product.socialLinks}
                 />
@@ -38,6 +39,6 @@ Cajonde12Container.propTypes = {
                 })
             ),
         })
-    ).isRequired,
+    ),
 };
 export default Cajonde12Container;
