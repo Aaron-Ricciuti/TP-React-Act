@@ -1,6 +1,4 @@
 import PropTypes from "prop-types";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 function CarouselItem({
   imageSrc,
   imageAlt,

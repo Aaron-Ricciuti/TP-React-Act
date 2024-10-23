@@ -10,9 +10,9 @@ const products = [
    title: 'Cajón acústico personalizado para subwoofer de 12" pesados de más de 700 rms',
    price: '$61.990',
    description: [
-       'Excelente calidad de productos y terminaciones.',
-       'Hechos en MDF de 18 MM.',
-       'Clavados, encolados y atornillados.',
+       'Excelente calidad de productos y terminaciones. Hechos en MDF de 18 MM, no en aglomerado !!!',
+        'Clavados, encolados y atornillados.',
+        'Forrados en cuerina negra con detalles en alfombra gris.',
    ],
    additionalInfo: {
        dimensions: ['73cm de largo', '38cm de alto', '38cm de profundidad'],

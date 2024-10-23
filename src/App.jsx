@@ -8,10 +8,9 @@ import Footer from './components/layout/Footer';
 import Grid from './components/Grid';
 import AboutUsContainer from './components/AboutUsContainer';
 import ContactContainer from './components/ContactContainer';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {Routes, Route } from 'react-router-dom';
 import Cajonde12Container from './components/Cajonde12Container';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 
 function App()  {
@@ -144,9 +143,9 @@ function App()  {
      title: 'Cajón acústico personalizado para subwoofer de 12" pesados de más de 700 rms',
      price: '$61.990',
      description: [
-         'Excelente calidad de productos y terminaciones.',
-         'Hechos en MDF de 18 MM.',
+         'Excelente calidad de productos y terminaciones. Hechos en MDF de 18 MM, no en aglomerado !!!',
          'Clavados, encolados y atornillados.',
+         'Forrados en cuerina negra con detalles en alfombra gris.',
      ],
      additionalInfo: {
          dimensions: ['73cm de largo', '38cm de alto', '38cm de profundidad'],
