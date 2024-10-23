@@ -7,7 +7,8 @@ function Card({
     imageAlt,
     title,
     description,
-    buttonTitle,   
+    buttonTitle,  
+    buttonPath, 
 }) {
   return (
     <div className={styles.card}> 
@@ -19,7 +20,7 @@ function Card({
             <p key={index}>{desc}</p>
             ))}
             </div> 
-             <Link to="/Cajonde12" className={styles.btn}> 
+             <Link to={buttonPath} className={styles.btn}> 
               {buttonTitle}
              </Link>
          </div>
@@ -33,6 +34,7 @@ Card.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.arrayOf(PropTypes.string).isRequired,
     buttonTitle: PropTypes.string.isRequired,
+    buttonPath: PropTypes.string.isRequired,
 };
 
 export default Card;

@@ -15,6 +15,7 @@ function CardContainer({ cards }) {
     url={card.url}
     description={card.description}
     buttonTitle={card.buttonTitle}
+    buttonPath={card.buttonPath}
     /> 
     ))}
   </section>
@@ -30,6 +31,7 @@ CardContainer.propTypes = {
           description: PropTypes.arrayOf(PropTypes.string).isRequired,
           url: PropTypes.string.isRequired,
           buttonTitle: PropTypes.string.isRequired,
+          buttonPath: PropTypes.string.isRequired,
     })
   ).isRequired,
 };
