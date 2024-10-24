@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import Carousel from './carousel';
 import styles from "../../public/css/cajonde12.module.css";
+import stylesB from "../../public/css/cajonde12.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -35,7 +36,7 @@ function Cajonde12({ title, price, description, additionalInfo, socialLinks }) {
       {title}
         </header>
         <main>
-        <Carousel slides={slides} />
+        <Carousel slides={slides} imgClass={stylesB.image} />
         <div className={styles['container-info-product']}>
           <div className={styles['container-price']}>
             <span>{price}</span>
@@ -64,9 +65,9 @@ function Cajonde12({ title, price, description, additionalInfo, socialLinks }) {
                 <span>Compartir</span>
                 <div className={styles['container-button-social']}>
                     {Array.isArray(socialLinks) && socialLinks.map((link, index) => (
-                    <a key={index} href={link.url}>
-                      <i className={`fa-brands ${link.icon}`}></i>
-                    </a>
+                   <a href={link.url} key={index}>
+                   <i className={`${link.icon.includes('fa-envelope') ? 'fa-solid' : 'fa-brands'} ${link.icon}`}></i>
+                 </a>                 
                    ))}
                 </div>
               </div>

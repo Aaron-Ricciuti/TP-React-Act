@@ -9,9 +9,6 @@ import Grid from './components/Grid';
 import AboutUsContainer from './components/AboutUsContainer';
 import ContactContainer from './components/ContactContainer';
 import {Routes, Route } from 'react-router-dom';
-import Cajonde12Container from './components/Cajonde12Container';
-
-
 
 function App()  {
   const navLinks = [
@@ -24,7 +21,6 @@ function App()  {
 
   const handleSearch = (term) => {
     console.log('Buscando:', term);                                       
-    // Lógica para manejar la búsqueda
   };
 
     const titles = {

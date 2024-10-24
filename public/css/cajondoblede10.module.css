@@ -47,8 +47,8 @@ main {
 	height: 50%;
 }
 
-.carousel, .slide {
-	background-color: rgb(221 221 221) !important;
+.image{
+	height: auto;
 }
 
 .d-block, .w-200 {
@@ -127,20 +127,6 @@ main {
     padding: 4px;
 }
 
-footer {
-	text-align: center;
-	padding: 30px;
-	background-color: rgb(221 221 221);
-	margin-top: 50px;
-	color: #222;
-}
-
-footer p {
-	font-size: 22px;
-    font-weight: 500;
-	margin-bottom: 0rem;
-}
-
 @media screen and (min-width: 360px) and (max-width: 1080px) {
 
 	.container-title {
@@ -178,10 +164,6 @@ footer p {
 		border-bottom: none;
 	}
 
-	footer{
-        padding: 20px;
-        margin-top: 0px;
-	}
 }
 
 @media screen and (min-width: 880px) {

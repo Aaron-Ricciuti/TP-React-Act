@@ -1,7 +1,7 @@
 import CarouselItem from "./CarouseIItem";
 import styles from "../../public/css/cajonde12.module.css";
 
-function Carousel({ slides }) {
+function Carousel({ slides, imgClass}) {
   return (
     <div id="carouselExampleCaptions" className={`carousel slide ${styles.carouselExampleCaptions}`} >
     <div className="carousel-indicators">
@@ -17,6 +17,7 @@ function Carousel({ slides }) {
             imageAlt={slide.alt}
             imageSrc={slide.image}
             active={index === 0}
+            imgClass={imgClass}
             />
         ))}
     </div>
@@ -31,5 +32,6 @@ function Carousel({ slides }) {
     </div>
   );
 }
-  
+
+
 export default Carousel;

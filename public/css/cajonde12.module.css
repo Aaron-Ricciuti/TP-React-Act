@@ -16,6 +16,11 @@ img {
 .carousel-inner {
 	overflow: hidden;
 }
+
+.image{
+	height: auto;
+}
+
 .container-title i {
 	display: none;
 }
@@ -124,20 +129,6 @@ main {
     padding: 4px;
 }
 
-footer {
-	text-align: center;
-    padding: 7px 0px;
-    background-color: rgb(221 221 221);
-    margin-top: 50px;
-    color: #222;
-}
-
-footer p {
-	font-size: 22px;
-    font-weight: 600;
-	margin-bottom: revert;
-}
-
 @media screen and (min-width: 360px) and (max-width: 1080px) {
 
 	.container-title {
@@ -169,11 +160,6 @@ footer p {
 	.container-additional-information{
 		padding: 0px;
 		border-bottom: none;
-	}
-
-	footer{
-        padding: 20px;
-        margin-top: 0px;
 	}
 }
 

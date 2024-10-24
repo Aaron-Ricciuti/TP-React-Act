@@ -3,10 +3,9 @@ import Footer from './layout/Footer';
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import Carousel from './carousel';
+import stylesA from "../../public/css/Rackera6x9.module.css";
 import styles from "../../public/css/Rackera6x9.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
 function Rackera6x9({ title, price, description, additionalInfo, socialLinks }) {
   
   const slides = [
@@ -26,7 +25,6 @@ function Rackera6x9({ title, price, description, additionalInfo, socialLinks }) 
           image: "../../public/img/rackera6x9_3.jpg",
           alt: "Rackera6x9",
         },
-      
       ];
   return ( 
         <>
@@ -35,7 +33,7 @@ function Rackera6x9({ title, price, description, additionalInfo, socialLinks }) 
       {title}
         </header>
         <main>
-        <Carousel slides={slides} />
+        <Carousel slides={slides} imgClass={stylesA.image}/>
         <div className={styles['container-info-product']}>
           <div className={styles['container-price']}>
             <span>{price}</span>
@@ -64,9 +62,9 @@ function Rackera6x9({ title, price, description, additionalInfo, socialLinks }) 
                 <span>Compartir</span>
                 <div className={styles['container-button-social']}>
                     {Array.isArray(socialLinks) && socialLinks.map((link, index) => (
-                    <a key={index} href={link.url}>
-                      <i className={`fa-brands ${link.icon}`}></i>
-                    </a>
+                    <a href={link.url} key={index}>
+                    <i className={`${link.icon.includes('fa-envelope') ? 'fa-solid' : 'fa-brands'} ${link.icon}`}></i>
+                    </a>  
                    ))}
                 </div>
               </div>

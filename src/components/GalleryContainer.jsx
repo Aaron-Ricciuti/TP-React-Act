@@ -18,7 +18,7 @@ function GalleryContainer({ title, images}) {
 
 GalleryContainer.propTypes = {
     title: PropTypes.string,
-    image: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+    image: PropTypes.arrayOf(PropTypes.string.isRequired),
 }
 
 export default GalleryContainer;

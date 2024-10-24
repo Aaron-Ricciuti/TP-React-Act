@@ -29,7 +29,7 @@ CardContainer.propTypes = {
           imageAlt: PropTypes.string.isRequired,
           title: PropTypes.string.isRequired,
           description: PropTypes.arrayOf(PropTypes.string).isRequired,
-          url: PropTypes.string.isRequired,
+          url: PropTypes.string,
           buttonTitle: PropTypes.string.isRequired,
           buttonPath: PropTypes.string.isRequired,
     })
