@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "../../public/css/aboutUs.module.css"
+import styles from "../../public/css/aboutUs.module.css";
 
 function AboutUs( {title, description, image, imageAlt} ) {
   return (

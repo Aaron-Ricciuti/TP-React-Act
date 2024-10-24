@@ -8,7 +8,7 @@ import styles from '../../../public/css/header.module.css';
 
 function Header({ title, navLinks, whatsappLink, searchPlaceholder, onSearch }) {
   return (
-    <header id="start">
+    <header id="start" className={styles['start']}>
        <div className={styles['nav-container']}>
         <h1>{title}</h1>
         <SearchForm placeholder={searchPlaceholder} onSearch={onSearch} />
@@ -21,18 +21,18 @@ function Header({ title, navLinks, whatsappLink, searchPlaceholder, onSearch }) 
     </header>
   );
 }
-// Definición de PropTypes
+
 Header.propTypes = {
-    title: PropTypes.string.isRequired,  // El título debe ser un string y es obligatorio
-    navLinks: PropTypes.arrayOf(         // navLinks es un array de objetos
+    title: PropTypes.string.isRequired,  
+    navLinks: PropTypes.arrayOf(         
       PropTypes.shape({
-        label: PropTypes.string.isRequired,  // Cada objeto debe tener un string 'label'
-        href: PropTypes.string.isRequired,   // Cada objeto debe tener un string 'href'
+        label: PropTypes.string.isRequired,  
+        href: PropTypes.string.isRequired,  
       })
     ).isRequired,
-    whatsappLink: PropTypes.string.isRequired, // La URL de WhatsApp debe ser un string
-    searchPlaceholder: PropTypes.string.isRequired, // El placeholder debe ser un string
-    onSearch: PropTypes.func.isRequired,     // La función onSearch debe ser una función
+    whatsappLink: PropTypes.string.isRequired, 
+    searchPlaceholder: PropTypes.string.isRequired, 
+    onSearch: PropTypes.func.isRequired,     
   };
 
 export default Header;

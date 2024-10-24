@@ -7,7 +7,6 @@ import styles from "../../public/css/cajonde15.module.css";
 import stylesC from "../../public/css/cajonde15.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 function Cajonde15({ title, price, description, additionalInfo, socialLinks }) {
   
   const slides = [

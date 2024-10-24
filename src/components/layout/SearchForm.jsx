@@ -7,12 +7,13 @@ function SearchForm({ placeholder, onSearch }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSearch(searchTerm);  // Llamada a la función onSearch pasada por props
+    onSearch(searchTerm);  
+    setSearchTerm('');
   };
 
   return (
     <form className={styles['agrandado-form']} onSubmit={handleSubmit}>
-      <input 
+      <input
         placeholder={placeholder}
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)} 
@@ -22,10 +23,9 @@ function SearchForm({ placeholder, onSearch }) {
   );
 }
 
-// Definición de PropTypes
 SearchForm.propTypes = {
-  placeholder: PropTypes.string.isRequired,  // El placeholder debe ser un string y es obligatorio
-  onSearch: PropTypes.func.isRequired,       // onSearch debe ser una función y es obligatorio
+  placeholder: PropTypes.string.isRequired,  
+  onSearch: PropTypes.func.isRequired,
 };
 
 export default SearchForm;
